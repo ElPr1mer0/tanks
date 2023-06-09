@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/left">
+        <file>green_tank_left/0.png</file>
+        <file>green_tank_left/1.png</file>
+        <file>green_tank_left/2.png</file>
+        <file>green_tank_left/3.png</file>
+        <file>green_tank_left/4.png</file>
+    </qresource>
+    <qresource prefix="/shell">
+        <file>shell/tank_sheel.png</file>
+    </qresource>
+    <qresource prefix="/right">
+        <file>green_tank_right/0.png</file>
+        <file>green_tank_right/1.png</file>
+        <file>green_tank_right/2.png</file>
+        <file>green_tank_right/3.png</file>
+        <file>green_tank_right/4.png</file>
+    </qresource>
+    <qresource prefix="/up">
+        <file>green_tank_up/0.png</file>
+        <file>green_tank_up/1.png</file>
+        <file>green_tank_up/2.png</file>
+        <file>green_tank_up/3.png</file>
+        <file>green_tank_up/4.png</file>
+    </qresource>
+    <qresource prefix="/down">
+        <file>green_tank_down/0.png</file>
+        <file>green_tank_down/1.png</file>
+        <file>green_tank_down/2.png</file>
+        <file>green_tank_down/3.png</file>
+        <file>green_tank_down/4.png</file>
+    </qresource>
+</RCC>
