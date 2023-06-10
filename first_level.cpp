@@ -5,7 +5,7 @@
 first_level::first_level(){
     setGeometry(600,200,800,600);
     SetCurrentLevel(1);
-    player = new green_tank(this);
+    player = new green_tank(100,100,this);
     //player->SetCurrentTankImage(player->images.up[0]);
     show();
 }

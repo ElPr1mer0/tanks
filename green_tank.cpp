@@ -15,18 +15,17 @@ void green_tank_move_images::SetGreenTankMoveImages(){
     }
 };
 
-green_tank::green_tank(QWidget *parent){
+green_tank::green_tank(int x, int y, QWidget *parent){
     SetDamage(40);
     SetHp(100);
     SetSpeed(2.5);
-    SetXY(parent->x()/2,parent->y()/2);
 
-    CreateTank(parent);
+    setParent(parent);
+    move(parent->x()/2,parent->y()/2);
+
     SetCurrentTankImageIndex(0);
-    //SetCurrentTankImage(images.up[0]);
     images.SetGreenTankMoveImages();
-    SetWidth(tank_image->width());
-    SetHeight(tank_image->height());
+    SetCurrentTankImage(images.up[0]);
 }
 
 void green_tank::ChangeCurrentTankImage(const move_direction &dir){
@@ -52,17 +51,6 @@ void green_tank::ChangeCurrentTankImage(const move_direction &dir){
 }
 
 void green_tank::SetCurrentTankImage(const QString tank_image_path){
-    tank_image->setPixmap(QPixmap(tank_image_path));
-    tank_image->setGeometry(X(),Y(),Width(),Height());
-
+    setPixmap(QPixmap(tank_image_path));
+    setGeometry(x(),y(),width(),height());
 }
-
-void green_tank::SetShellImage(const QString shell_image_path){
-    shell_image->setPixmap(QPixmap(shell_image_path));
-    shell_image->setGeometry(ShellX(),ShellY(),ShellWidth(),ShellHeight());
-}
-
-
-
-
-

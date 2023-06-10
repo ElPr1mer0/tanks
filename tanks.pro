@@ -11,15 +11,19 @@ CONFIG += c++17
 SOURCES += \
     first_level.cpp \
     green_tank.cpp \
+    gun.cpp \
     main.cpp \
     mainwindow.cpp \
+    shell.cpp \
     tanks.cpp
 
 HEADERS += \
     first_level.h \
     green_tank.h \
+    gun.h \
     levels.h \
     mainwindow.h \
+    shell.h \
     tanks.h
 
 # Default rules for deployment.

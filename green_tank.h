@@ -19,10 +19,10 @@ class green_tank:public tanks{
 private:
     static green_tank_move_images images;
 public:
-    green_tank(QWidget *parent);
-    virtual void ChangeCurrentTankImage(const move_direction &dir) override;
-    virtual void SetCurrentTankImage(const QString tank_image_path) override;
-    virtual void SetShellImage(const QString shell_image_path) override;
+    green_tank(int x, int y, QWidget *parent);
+    void ChangeCurrentTankImage(const move_direction &dir);
+    void SetCurrentTankImage(const QString tank_image_path);
+//    virtual void SetShellImage(const QString shell_image_path) override;
 };
 
 
