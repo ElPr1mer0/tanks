@@ -1,8 +1,9 @@
 #include "gun.h"
-#include "shell.h"
 
 
-void gun::Shoot(){
-    //shell *sh = new shell(flight_direction::);
+
+void gun::Shoot(int x, int y, QWidget *parent, const flight_direction &dir){
+    shell *sh = new shell(x,y,dir,ShellSpeed(),parent);
+    sh->move(x,y);
 }
 

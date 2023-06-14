@@ -20,7 +20,9 @@ green_tank::green_tank(int x, int y, QWidget *parent){
     SetHp(100);
     SetSpeed(2.5);
 
+    //this->parent = parent;
     setParent(parent);
+    //this->parentWidget()
     move(parent->x()/2,parent->y()/2);
 
     SetCurrentTankImageIndex(0);
@@ -51,6 +53,9 @@ void green_tank::ChangeCurrentTankImage(const move_direction &dir){
 }
 
 void green_tank::SetCurrentTankImage(const QString tank_image_path){
-    setPixmap(QPixmap(tank_image_path));
+    QPixmap image;
+    image.load(tank_image_path);
+    resize(image.size());
+    setPixmap(image);
     setGeometry(x(),y(),width(),height());
 }

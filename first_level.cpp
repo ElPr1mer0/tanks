@@ -6,7 +6,6 @@ first_level::first_level(){
     setGeometry(600,200,800,600);
     SetCurrentLevel(1);
     player = new green_tank(100,100,this);
-    //player->SetCurrentTankImage(player->images.up[0]);
     show();
 }
 
@@ -24,7 +23,7 @@ void first_level::keyPressEvent(QKeyEvent *event){
     case Qt::Key_S :
         player->Move(move_direction::down);
         break;
-    case Qt::Key_Space :
+    case Qt::Key_Space:
         player->Attack();
         break;
     }
